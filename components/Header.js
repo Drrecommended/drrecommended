@@ -1,14 +1,17 @@
+import styles from '../styles/header.module.css'
+import Image from 'next/image'
+
 export default function Header() {
   return (
-    <header class="header-section">
-      <h1 class="header-logo">DR RECOMMENDED</h1>
-      <div class="marquee-w">
-        <div class="marquee">
+    <header className={styles.headerSection}>
+      <Image src="/public/DR RECOMMENDED LOGO OUTLINE 01.png" layout='fill'/>
+      <div className="marquee-w">
+        <div className="marquee">
           <span>
             Welcome to my DJ site. Check out some of my MIXES and DESIGNS.
           </span>
         </div>
-        <div class="marquee">
+        <div className="marquee">
           <span>
             Welcome to my DJ site. Check out some of my MIXES and DESIGNS.
           </span>

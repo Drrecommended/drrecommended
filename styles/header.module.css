@@ -1,0 +1,57 @@
+.headerSection {
+    background-color: gainsboro;
+    width: 99.2%;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+.header-logo {
+    font-size: 10vw;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.header-text {
+    margin-bottom: 0;
+}
+
+.marquee-w {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 140px;
+    transform: translate(0, 0);
+    overflow: hidden;
+}
+
+.marquee {
+    position: absolute;
+    display: relative;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    height: 100%;
+}
+
+.marquee span {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 140px;
+    font-size: 55px;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-80%, 0);
+    }
+}
