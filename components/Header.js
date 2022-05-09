@@ -1,10 +1,11 @@
 import styles from '../styles/header.module.css'
 import Image from 'next/image'
+import myLogo from '../public/logo.png'
 
 export default function Header() {
   return (
     <header className={styles.headerSection}>
-      <Image src="/public/DR RECOMMENDED LOGO OUTLINE 01.png" layout='fill'/>
+      <Image src={myLogo} />
       <div className="marquee-w">
         <div className="marquee">
           <span>
